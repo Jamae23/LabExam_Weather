@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const apiKey = "9JITU1iswqAbGCVU6rFAKaVyyPXNSIm2"; // Replace with your actual API key
+    const apiKey = "VpLFMRAmpA5zP8nNDATzA05GoYVPbIsi"; // Replace with your actual API key
     const form = document.getElementById("cityForm");
     const currentWeatherDiv = document.getElementById("currentWeather");
     const hourlyForecastDiv = document.getElementById("hourlyForecast");
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function displayHourlyForecast(data) {
-        
+
         const temperature = data[0].Temperature.Value;
         const weather = data[0].IconPhrase;
         const forecastTime = new Date(data[0].DateTime).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
